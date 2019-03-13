@@ -8,14 +8,6 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
+	<context:component-scan base-package="com.test.spring.springcoreadvance.injecting.interfaces"/>
 
-	<bean
-		class="com.test.spring.springcoreadvance.injecting.interfaces.OrderDAOimpl"
-		name="dao" />
-
-	<bean
-		class="com.test.spring.springcoreadvance.injecting.interfaces.OrderBOimpl"
-		name="bo">
-		<property name="dao" ref="dao" />
-	</bean>
 </beans>

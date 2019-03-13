@@ -1,5 +1,8 @@
 package com.test.spring.springcoreadvance.injecting.interfaces;
 
+import org.springframework.stereotype.Component;
+
+@Component("dao")
 public class OrderDAOimpl implements OrderDAO {
 
 	@Override
